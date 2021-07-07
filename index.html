@@ -14,11 +14,11 @@
     <title>samMorgan.io</title>
   </head>
   <body>
-    <script src="main.js"></script>
+    
     <header class="mainheader">
       <h1 class="logo">samMorgan.io</h1>
       <ul class="navbar">
-        <li>About</li>
+        <li class="nav-item1">About</li>
         <li>Services</li>
         <li>Portfolio</li>
         <li>Blog</li>
@@ -27,6 +27,10 @@
     </header>
     <div class="maincontent">
       <h1 class="pagetitle">App development for small business</p>
+        <input type="text" placeholder="New task..." class="input" />
+        <button class="btn" onclick="handleClick()">Add task</button>
+        <ul class="task-list"></ul>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
