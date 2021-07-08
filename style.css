@@ -7,7 +7,9 @@ body {
   font-family: Inter;
   background-color: #fafafa;
 }
-
+ul {
+  min-width: 500px;
+}
 input,
 input:hover,
 input:focus {
@@ -25,6 +27,24 @@ input:focus {
 input:hover {
   border-style: so;
 }
+.task-input {
+  min-width: 500px;
+}
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+  margin-left: auto;
+  padding-left: 100px;
+}
+.task-list li {
+  list-style: none;
+  font-size: medium;
+  font-weight: 500;
+}
 .maincontent {
   display: flex;
   flex-direction: column;
@@ -32,6 +52,7 @@ input:hover {
   justify-content: center;
   text-align: center;
   padding-top: 20px;
+  min-width: 500px;
 }
 .mainheader {
   display: flex;

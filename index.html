@@ -14,7 +14,6 @@
     <title>samMorgan.io</title>
   </head>
   <body>
-    
     <header class="mainheader">
       <h1 class="logo">samMorgan.io</h1>
       <ul class="navbar">
@@ -26,10 +25,22 @@
       <button class="btn">Sign up</button>
     </header>
     <div class="maincontent">
-      <h1 class="pagetitle">App development for small business</p>
-        <input type="text" placeholder="New task..." class="input" />
-        <button class="btn" onclick="handleClick()">Add task</button>
-        <ul class="task-list"></ul>
+      <h1 class="pagetitle">Task List</h1>
+      <p id="error-message"></p>
+      <div class="task-input">
+        <input
+          type="text"
+          placeholder="New task..."
+          class="input"
+          id="input"
+          onsubmit="handleClick()"
+        />
+        <button class="btn" type="submit" onclick="handleClick()">
+          Add task
+        </button>
+      </div>
+
+      <ul class="task-list"></ul>
     </div>
     <script src="main.js"></script>
   </body>
